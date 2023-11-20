@@ -311,7 +311,8 @@ h3 {
 
     /* flex-direction: column; */
 }
-.event-box img{
+
+.event-box img {
     height: 13rem;
 }
 
@@ -354,13 +355,14 @@ h3 {
 }
 
 .instructor-bg {
-    background-color: rgb(0 0 0 / 53%);
+    background-color: rgba(0, 0, 0, 0.705);
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .instructor-bg h1 {
@@ -558,7 +560,7 @@ table {
     .moving-screen {
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .move {
@@ -574,6 +576,11 @@ table {
     .instructor-bg {
         gap: 1rem;
         padding: .5rem 0rem;
+    }
+
+    .instructor-bg p {
+        width: 100%;
+        text-align: center;
     }
 
 
@@ -593,7 +600,7 @@ table {
         width: 88%;
         height: auto;
         margin: auto;
-       
+
     }
 
 
@@ -609,8 +616,12 @@ table {
 
 
     .blog-wrapper {
-        padding: .5rem;
-        gap: 2rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .blog-wrapper h1 {
+        font-size: 1.2rem;
     }
 
     .fotter-end {
@@ -618,4 +629,34 @@ table {
         flex-direction: column;
         gap: 1rem;
     }
+
+    .list {
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        color: black;
+        width: 100%;
+        top: 5.3rem;
+        padding: 1rem 0;
+        /* transition: all 1s ease-in; */
+        animation: showNav 1s none;
+    }
+
+    .navBar {
+        display: flex;
+    }
+}
+
+
+@keyframes showNav {
+    from {
+        top: -80%;
+        opacity: .2;
+    }
+
+    to {
+        top: 105%;
+        opacity: 1;
+    }
+    
 }
